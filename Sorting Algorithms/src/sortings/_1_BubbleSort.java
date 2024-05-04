@@ -2,9 +2,9 @@ package sortings;
 
 import java.util.ArrayList;
 
-public class BubbleSort extends Sort {
+public class _1_BubbleSort extends Sort {
 	
-	public BubbleSort(ArrayList<Integer> list) {
+	public _1_BubbleSort(ArrayList<Integer> list) {
 		super(list);		
 	}	
 	public void sort() {	

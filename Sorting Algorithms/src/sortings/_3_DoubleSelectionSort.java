@@ -2,8 +2,8 @@ package sortings;
 
 import java.util.ArrayList;
 
-public class DoubleSelectionSort extends Sort  {	
-	public DoubleSelectionSort(ArrayList<Integer> list) {
+public class _3_DoubleSelectionSort extends Sort  {	
+	public _3_DoubleSelectionSort(ArrayList<Integer> list) {
 		super(list);		
 	}
 

@@ -1,9 +1,9 @@
 package sortings;
 import java.util.ArrayList;
 
-public class MergeSort extends Sort {
+public class _5_MergeSort extends Sort {
 
-	public MergeSort(ArrayList<Integer> list) {
+	public _5_MergeSort(ArrayList<Integer> list) {
 		super(list);
 	}
 
