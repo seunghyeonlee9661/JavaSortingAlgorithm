@@ -1,10 +1,10 @@
 package sortings;
 
-import java.util.ArrayList;
+import main.Sort;
 
 public class _10_IntroSort extends Sort {
 
-	public _10_IntroSort(ArrayList<Integer> list) {
+	public _10_IntroSort(int[] list) {
 		super(list);
 		// TODO Auto-generated constructor stub
 	}

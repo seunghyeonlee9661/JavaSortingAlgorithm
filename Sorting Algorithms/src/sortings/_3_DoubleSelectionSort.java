@@ -1,68 +1,46 @@
 package sortings;
 
-import java.util.ArrayList;
+import main.Sort;
 
-public class _3_DoubleSelectionSort extends Sort  {	
-	public _3_DoubleSelectionSort(ArrayList<Integer> list) {
-		super(list);		
+public class _3_DoubleSelectionSort extends Sort {
+
+	public _3_DoubleSelectionSort(int[] list) {
+		super(list);
 	}
 
-	@Override
 	public void sort() {
-		int size = super.getSize();	
-		int least, least_j;
-		int most, most_j;
-		ArrayList<Integer> list = super.getList();
-		
-		for(int i = 0; i<size-i ; i++) {
+		int size = getSize();
+		int[] list = getList();
+		int least;
+		int most;
+
+		for (int i = 0; i < size - i; i++) {
 //			System.out.println("");
 //			System.out.print("i : ");
 //			System.out.println(i);
 //			System.out.println(list);
-			
-			least_j = i;		
-			most_j = size-1-i;
-			least = list.get(least_j);	
-			most = list.get(most_j);			
-			
-			for(int j = i; j< size-i; j++) {
-				if(list.get(j) < least) {			
-					least = list.get(j);
-					least_j = j;
+
+			least = i;
+			most = size - 1 - i;
+
+			for (int j = i; j < size - i; j++) {
+				if (list[j] < list[least]) {
+					least = j;
 				}
-				if(list.get(j) > most) {
-					most = list.get(j);
-					most_j = j;					
+				if (list[j] > list[most]) {
+					most = j;
 				}
-			}			
-			if(least_j != i) {
-//				System.out.print("least swap >> least(" );
-//				System.out.print(least_j);
-//				System.out.print(":" );
-//				System.out.print(list.get(least_j));
-//				System.out.print(") target(" );
-//				System.out.print(i);
-//				System.out.print(":" );
-//				System.out.print(list.get(i));
-//				System.out.println(")" );
-				swap(i,least_j);
-				
 			}
-			if(most_j != size-1-i) {
-				if(most_j == i) {
-					most_j = least_j;
-				}
-//				System.out.print("most swap >> most(" );
-//				System.out.print(most_j);
-//				System.out.print(":" );
-//				System.out.print(list.get(most_j));
-//				System.out.print(") target(" );
-//				System.out.print(size-1-i);
-//				System.out.print(":" );
-//				System.out.print(list.get(size-1-i));
-//				System.out.println(")" );
-				swap(size-1-i,most_j);
+			if (least != i) {
+				swap(i, least);
+
 			}
-		}		
-	}	
+			if (most != size - 1 - i) {
+				if (most == i) {
+					most = least;
+				}
+				swap(size - 1 - i, most);
+			}
+		}
+	}
 }

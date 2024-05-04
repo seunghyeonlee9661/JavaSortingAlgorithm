@@ -1,36 +1,36 @@
 package sortings;
 
-import java.util.ArrayList;
+import main.Sort;
 
 public class _6_QuickSort extends Sort {
 
-	public _6_QuickSort(ArrayList<Integer> list) {
+	public _6_QuickSort(int[] list) {
 		super(list);
 	}
 
 	@Override
 	public void sort() {
-		ArrayList<Integer> list = super.getList();
+		int[] list = super.getList();
 		int size = this.getSize();
-		pivotSort(list, 0, size - 1);
+		divide(list, 0, size - 1);
 	}
 
-	public void pivotSort(ArrayList<Integer> list, int min, int max) {
+	public void divide(int[] list, int min, int max) {
 		if (min < max) {
-			int pivot = partition(list, min, max);
-			pivotSort(list, min, pivot);
-			pivotSort(list, pivot + 1, max);
+			int pivot = getPivot(list, min, max);
+			divide(list, min, pivot);
+			divide(list, pivot + 1, max);
 		}
 		return;
 	}
 
-	private int partition(ArrayList<Integer> list, int min, int max) {
-		int pivot = list.get((min + max) / 2);
+	private int getPivot(int[] list, int min, int max) {
+		int pivot = list[(min + max) / 2];
 
 		while (true) {
-			while (list.get(min) < pivot)
+			while (list[min] < pivot)
 				min++;
-			while (list.get(max) > pivot && min <= max)
+			while (list[max] > pivot && min <= max)
 				max--;
 			if (min >= max)
 				return max;

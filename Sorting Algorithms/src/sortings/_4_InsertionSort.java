@@ -1,22 +1,22 @@
 package sortings;
 
-import java.util.ArrayList;
+import main.Sort;
 
 public class _4_InsertionSort extends Sort {
 
-	public _4_InsertionSort(ArrayList<Integer> list) {
+	public _4_InsertionSort(int[] list) {
 		super(list);
 	}
 
 	@Override
 	public void sort() {
-		int size = super.getSize();
-		ArrayList<Integer> list = super.getList();
+		int size = getSize();
+		int[] list = getList();
 
 		for (int i = 1; i < size; i++) {
 			int target = i;
 			for (int j = i - 1; j >= 0; j--) {
-				if (list.get(target) < list.get(j)) {
+				if (list[target] < list[j]) {
 					swap(target--, j);
 				} else {
 					break;

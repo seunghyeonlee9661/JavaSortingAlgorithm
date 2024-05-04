@@ -1,28 +1,27 @@
 package main;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import sortings._1_BubbleSort;
-import sortings._3_DoubleSelectionSort;
 import sortings.GravitySort;
-import sortings._7_HeapSort;
-import sortings._4_InsertionSort;
-import sortings._10_IntroSort;
-import sortings._5_MergeSort;
-import sortings._6_QuickSort;
 import sortings.RadixSort;
-import sortings._2_SelectionSort;
 import sortings.ShellSort;
 import sortings.SleepSort;
-import sortings.Sort;
-import sortings._9_TimSort;
+import sortings._10_IntroSort;
+import sortings._1_BubbleSort;
+import sortings._2_SelectionSort;
+import sortings._3_DoubleSelectionSort;
+import sortings._4_InsertionSort;
+import sortings._5_MergeSort;
+import sortings._6_QuickSort;
+import sortings._7_HeapSort;
 import sortings._8_TreeSort;
+import sortings._9_TimSort;
 
 public class Main {
 	public static void main(String[] args) {
-		ArrayList<Integer> list = generateArr(50);
+		int[] list = generateArr(10);
+		System.out.print(list);
 		Scanner input = new Scanner(System.in);
 		boolean exit = true;
 
@@ -120,14 +119,19 @@ public class Main {
 		}
 	}
 
-	private static ArrayList<Integer> generateArr(int size) {
+	private static int[] generateArr(int size) {
 		Random rand = new Random();
-		ArrayList<Integer> list = new ArrayList<>();
-		while (list.size() < size) {
+		int[] list = new int[size];
+		int cnt = 0;
+
+		while (cnt < size) {
 			int randInt = rand.nextInt(1000);
-			if (!list.contains(randInt)) {
-				list.add(randInt);
+			for (int i = 0; i < cnt; i++) {
+				if (list[i] == randInt)
+					continue;
 			}
+			list[0] = randInt;
+			cnt++;
 		}
 		return list;
 	}

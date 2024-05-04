@@ -1,12 +1,12 @@
 package sortings;
 
-import java.util.ArrayList;
+import main.Sort;
 
 public class _8_TreeSort extends Sort {
 	Node root;
 	int index;
 
-	public _8_TreeSort(ArrayList<Integer> list) {
+	public _8_TreeSort(int[] list) {
 		super(list);
 		this.root = null;
 		this.index = 0;
@@ -15,19 +15,19 @@ public class _8_TreeSort extends Sort {
 
 	@Override
 	public void sort() {
-		ArrayList<Integer> list = super.getList();
+		int[] list = super.getList();
 		int size = this.getSize();
 
 		for (int i = 0; i < size; i++) {
-			insertNode(list.get(i));
+			insertNode(list[i]);
 		}
 		popNode(list, root);
 	}
 
-	private void popNode(ArrayList<Integer> list, Node node) {
+	private void popNode(int[] list, Node node) {
 		if (node != null) {
 			popNode(list, node.left);
-			list.set(index++, node.value);
+			list[index++] = node.value;
 			popNode(list, node.right);
 		}
 	}

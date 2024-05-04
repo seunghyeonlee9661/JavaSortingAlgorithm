@@ -1,27 +1,28 @@
 package sortings;
 
-import java.util.ArrayList;
 import java.util.PriorityQueue;
+
+import main.Sort;
 
 public class _7_HeapSort extends Sort {
 
-	public _7_HeapSort(ArrayList<Integer> list) {
+	public _7_HeapSort(int[] list) {
 		super(list);
 	}
 
 	@Override
 	public void sort() {
-		ArrayList<Integer> list = super.getList();
+		int[] list = super.getList();
 		int size = this.getSize();
 
 		PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
 
 		for (int i = 0; i < size; i++) {
-			heap.add(list.get(i));
+			heap.add(list[i]);
 		}
 
 		for (int i = 0; i < size; i++) {
-			list.set(i, heap.poll());
+			list[i] = heap.poll();
 		}
 
 	}
