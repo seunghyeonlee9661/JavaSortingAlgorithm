@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _1_BubbleSort extends Sort {
+public class _01_BubbleSort extends Sort {
 
-	public _1_BubbleSort(int[] list) {
+	public _01_BubbleSort(int[] list) {
 		super(list);
 	}
 

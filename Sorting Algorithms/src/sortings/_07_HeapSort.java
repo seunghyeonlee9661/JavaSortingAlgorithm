@@ -4,9 +4,9 @@ import java.util.PriorityQueue;
 
 import main.Sort;
 
-public class _7_HeapSort extends Sort {
+public class _07_HeapSort extends Sort {
 
-	public _7_HeapSort(int[] list) {
+	public _07_HeapSort(int[] list) {
 		super(list);
 	}
 

@@ -2,11 +2,11 @@ package sortings;
 
 import main.Sort;
 
-public class _8_TreeSort extends Sort {
+public class _08_TreeSort extends Sort {
 	Node root;
 	int index;
 
-	public _8_TreeSort(int[] list) {
+	public _08_TreeSort(int[] list) {
 		super(list);
 		this.root = null;
 		this.index = 0;

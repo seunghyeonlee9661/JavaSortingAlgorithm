@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _4_InsertionSort extends Sort {
+public class _04_InsertionSort extends Sort {
 
-	public _4_InsertionSort(int[] list) {
+	public _04_InsertionSort(int[] list) {
 		super(list);
 	}
 

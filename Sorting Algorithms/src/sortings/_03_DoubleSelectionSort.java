@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _3_DoubleSelectionSort extends Sort {
+public class _03_DoubleSelectionSort extends Sort {
 
-	public _3_DoubleSelectionSort(int[] list) {
+	public _03_DoubleSelectionSort(int[] list) {
 		super(list);
 	}
 
@@ -15,11 +15,6 @@ public class _3_DoubleSelectionSort extends Sort {
 		int most;
 
 		for (int i = 0; i < size - i; i++) {
-//			System.out.println("");
-//			System.out.print("i : ");
-//			System.out.println(i);
-//			System.out.println(list);
-
 			least = i;
 			most = size - 1 - i;
 

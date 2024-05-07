@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 import main.Sort;
 
-public class _5_MergeSort extends Sort {
+public class _05_MergeSort extends Sort {
 
-	public _5_MergeSort(int[] list) {
+	public _05_MergeSort(int[] list) {
 		super(list);
 	}
 
@@ -33,7 +33,7 @@ public class _5_MergeSort extends Sort {
 			while (j < right.length && left[i] > right[j]) {
 				result[cnt++] = right[j++];
 			}
-			result[cnt++] = left[i++];
+			result[cnt++] = left[i];
 		}
 
 		while (j < right.length) {

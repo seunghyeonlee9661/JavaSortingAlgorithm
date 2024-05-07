@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _6_QuickSort extends Sort {
+public class _06_QuickSort extends Sort {
 
-	public _6_QuickSort(int[] list) {
+	public _06_QuickSort(int[] list) {
 		super(list);
 	}
 
@@ -34,7 +34,6 @@ public class _6_QuickSort extends Sort {
 				max--;
 			if (min >= max)
 				return max;
-
 			swap(min, max);
 		}
 	}
