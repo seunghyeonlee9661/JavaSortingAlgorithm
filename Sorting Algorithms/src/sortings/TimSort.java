@@ -2,10 +2,10 @@ package sortings;
 
 import main.Sort;
 
-public class _09_TimSort extends Sort {
+public class TimSort extends Sort {
 	static int RUN = 5;
 
-	public _09_TimSort(int[] list) {
+	public TimSort(int[] list) {
 		super(list);
 	}
 

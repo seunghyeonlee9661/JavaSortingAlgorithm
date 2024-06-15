@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _06_QuickSort extends Sort {
+public class QuickSort extends Sort {
 
-	public _06_QuickSort(int[] list) {
+	public QuickSort(int[] list) {
 		super(list);
 	}
 

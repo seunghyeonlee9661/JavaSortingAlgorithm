@@ -5,9 +5,9 @@ import java.util.Queue;
 
 import main.Sort;
 
-public class _11_RadixSort extends Sort {
+public class RadixSort extends Sort {
 
-	public _11_RadixSort(int[] list) {
+	public RadixSort(int[] list) {
 		super(list);
 	}
 

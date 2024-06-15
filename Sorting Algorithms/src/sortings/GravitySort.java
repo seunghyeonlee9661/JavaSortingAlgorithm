@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _14_GravitySort extends Sort {
+public class GravitySort extends Sort {
 
-	public _14_GravitySort(int[] list) {
+	public GravitySort(int[] list) {
 		super(list);
 		// TODO Auto-generated constructor stub
 	}

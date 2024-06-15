@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 import main.Sort;
 
-public class _05_MergeSort extends Sort {
+public class MergeSort extends Sort {
 
-	public _05_MergeSort(int[] list) {
+	public MergeSort(int[] list) {
 		super(list);
 	}
 

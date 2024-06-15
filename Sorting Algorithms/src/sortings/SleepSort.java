@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import main.Sort;
 
-public class _13_SleepSort extends Sort {
+public class SleepSort extends Sort {
 
-	public _13_SleepSort(int[] list) {
+	public SleepSort(int[] list) {
 		super(list);
 	}
 

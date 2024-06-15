@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _02_SelectionSort extends Sort {
+public class SelectionSort extends Sort {
 
-	public _02_SelectionSort(int[] list) {
+	public SelectionSort(int[] list) {
 		super(list);
 	}
 
@@ -23,7 +23,5 @@ public class _02_SelectionSort extends Sort {
 			if (least != i)
 				swap(i, least);
 		}
-		// TODO Auto-generated method stub
-
 	}
 }

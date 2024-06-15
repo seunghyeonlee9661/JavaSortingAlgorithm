@@ -2,9 +2,9 @@ package sortings;
 
 import main.Sort;
 
-public class _12_ShellSort extends Sort {
+public class ShellSort extends Sort {
 
-	public _12_ShellSort(int[] list) {
+	public ShellSort(int[] list) {
 		super(list);
 		// TODO Auto-generated constructor stub
 	}

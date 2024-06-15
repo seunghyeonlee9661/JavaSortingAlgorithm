@@ -2,15 +2,25 @@ package sortings;
 
 import main.Sort;
 
-public class _08_TreeSort extends Sort {
+public class TreeSort extends Sort {
 	Node root;
 	int index;
 
-	public _08_TreeSort(int[] list) {
+	public TreeSort(int[] list) {
 		super(list);
 		this.root = null;
 		this.index = 0;
 		// TODO Auto-generated constructor stub
+	}
+
+	class Node {
+		int value;
+		Node left, right;
+
+		public Node(int value) {
+			this.value = value;
+			left = right = null;
+		}
 	}
 
 	@Override
@@ -57,16 +67,6 @@ public class _08_TreeSort extends Sort {
 				}
 			}
 
-		}
-	}
-
-	class Node {
-		int value;
-		Node left, right;
-
-		public Node(int value) {
-			this.value = value;
-			left = right = null;
 		}
 	}
 
